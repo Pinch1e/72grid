@@ -1,0 +1,51 @@
+
+
+/* Services
+-----------------------------------------------------------------*/
+
+.services{
+
+    .item{
+        padding: 40px 20px;
+        border: 1px solid rgba(255,255,255,.2);
+        border-radius: 5px;
+        height: 100%;
+
+        .letr{
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        h6{
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+        .tags{
+            margin-top: 20px;
+
+            a{
+                font-size: 12px;
+                padding: 5px 15px;
+                border: 1px solid rgba(255,255,255,.1);
+                border-radius: 30px;
+                margin-right: 5px;
+                margin-top: 5px;
+                transition: all .4s;
+
+                &:hover{
+                    background: var(--maincolor);
+                    color: #1d1d1d;
+                }
+
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+

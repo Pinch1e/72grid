@@ -1,0 +1,44 @@
+
+/* Header
+-----------------------------------------------------------------*/
+
+.author-profile{
+    perspective: 40rem;
+    transition: all .4s;
+
+    .cont{
+        padding: 30px;
+        border: 1px solid rgba(255,255,255,.2);
+        border-radius: 5px;
+        transform: rotateY(7deg);
+    }
+
+    .img{
+       background: var(--maincolor);
+
+        img{
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .social{
+
+        a{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid rgba(255,255,255,.5);
+            border-radius: 50%;
+            margin: 0 2px;
+            transition: all .4s;
+
+            &:hover{
+                background: #fff;
+                color: #1d1d1d;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+
+
+/* Buttons
+-----------------------------------------------------------------*/
+
+.butn-presv{
+    perspective: 500px;
+
+    .skew{
+        transform: rotateX(20deg);
+
+        &:hover{
+            transform: rotateX(0deg);
+        }
+    }
+}
+
+.butn{
+    border: 1px solid transparent;
+
+    &.butn-md{
+        padding: 14px 35px;
+    }
+
+    &.butn-sm{
+        padding: 13px 30px;
+        font-size: 13px;
+    }
+
+    &.butn-full{
+      width: 100%;
+      padding: 15px 25px;
+      text-align: center;
+    }
+
+    &.butn-bord{
+        border-color: #fff;
+        background: transparent;
+        color: #fff;
+        transition: all .4s;
+
+        &:hover{
+          background: #fff;
+          color: #000;
+
+          span{
+            color: #000;
+          }
+        }
+    }
+
+    &.butn-bg{
+        transition: all .4s;
+        
+        &:hover{
+            background: transparent !important;
+            border-color: #fff;
+            color: #fff !important;
+
+            .text-dark{
+                color: #fff !important;
+            }
+        }
+    }
+
+    &.hover-color{
+
+        &:hover{
+            background: var(--maincolor);
+            border-color: var(--maincolor);
+
+            img{
+                filter: invert(1);
+            }
+        }
+    }
+
+    .icon-img{
+        width: 15px;
+    }
+
+    .rolling-text{
+        margin-bottom: -5px;
+    }
+}

@@ -1,0 +1,25 @@
+
+/* Pricing
+-----------------------------------------------------------------*/
+
+.price-hr{
+
+    .item{
+        padding: 50px 30px;
+
+        .butn{
+            padding: 7px 25px;
+        }
+
+        &.text-dark{
+
+            .butn{
+                border-color: $sub_bg;
+
+                &:hover{
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+}

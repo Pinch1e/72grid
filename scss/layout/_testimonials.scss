@@ -1,0 +1,119 @@
+
+/* Testimonials
+-----------------------------------------------------------------*/
+
+.testim-crv{
+
+    .testim-swiper{
+
+        .swiper-slide{
+            padding-bottom: 3px;
+            position: relative;
+
+            .bg-color{
+                position: absolute;
+                bottom: 0;
+                left: 30px;
+                right: 30px;
+                background: var(--maincolor);
+                border-radius: 10px;
+                height: 20px;
+            }
+        }
+
+        .item{
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 0;
+            background: $main_bg;
+            overflow: hidden;
+            position: relative;
+            z-index: 3;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url(../imgs/patterns/noise1.png);
+                background-size: auto !important;
+                background-repeat: repeat !important;
+                pointer-events: none;
+                opacity: .8;
+                display: none;
+            }
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 0px -100px 80px -60px var(--maincolor) inset;
+                opacity: .08;
+            }
+
+            .img{
+                width: 80px;
+                margin-top: -40px;
+                margin-left: -40px;
+            }
+        }
+    }
+}
+
+.swiper-controls{
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        position: static;
+        display: inline-block;
+
+        &:after{
+            display: none;
+        }
+    }
+
+    &.arrow-out{
+
+        .swiper-button-prev,
+        .swiper-button-next{
+
+            &:hover{
+
+                .left,
+                .right{
+                    background: rgba(255, 255, 255, 0.05);
+                }
+            }
+        }
+
+        .left,
+        .right{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,.2);
+            border-radius: 50%;
+            color: #fff;
+        }
+
+        .left{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.swiper-pagination-bullet{
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 7px;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--maincolor);
+}
